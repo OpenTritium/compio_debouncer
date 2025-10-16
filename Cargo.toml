@@ -1,0 +1,12 @@
+[package]
+name = "compio_debouncer"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+compio = { version = "0.16.0", features = ["time"], default-features = false }
+futures-util = { version = "0.3.31", default-features = false }
+pin-project-lite = "0.2.16"
+
+[dev-dependencies]
+compio = { version = "*", features = ["macros", "time"] }
