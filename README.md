@@ -1,12 +1,10 @@
-Of course. Here is the translation:
-
-### Dependencies
+## Dependencies
 
 *   **`compio`**: Provides the async `sleep` function. If you want to run this on a different runtime, you can replace it with that runtime's `sleep` function.
 *   **`futures-util`**: Provides the `Stream` and `FusedStream` traits.
 *   **`pin-project-lite`**: A macro used for safe `Pin` projection.
 
-### Implementation Principle
+## Implementation Principle
 
 The core mechanism is to use a replaceable `Future` (named `pending_fut`) to delay a task.
 
